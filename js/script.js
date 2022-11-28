@@ -49,6 +49,7 @@ generate.addEventListener ('click', function(){
     }
 
     else {
+        costo_biglietto= Math.round(costo_biglietto * 100.0) / 100.0;
         console.log(costo_biglietto)
         document.getElementById('prezzo_biglietto').innerHTML= ('Il prezzo del biglietto è di' + " " +costo_biglietto + '€')
     }
