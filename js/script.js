@@ -29,17 +29,16 @@ generate.addEventListener ('click', function(){
 
     let sconto_minorenni= costo_biglietto * 0.8
     let sconto_over= costo_biglietto * 0.6
-    let minorenne= document.getElementById('minorenne')
-    let over= document.getElementById('over')
+    const eta = document.getElementById('myselect').value
     
 
-    if (minorenne){
+    if (eta===minorenne){
     costo_biglietto= Math.round(sconto_minorenni * 100.0) / 100.0;
     console.log(costo_biglietto)
     
     }
 
-    else if (over){
+    else if (eta===over){
         costo_biglietto= Math.round(sconto_over * 100.0) / 100.0;
         console.log(costo_biglietto)
     }
