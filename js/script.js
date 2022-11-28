@@ -25,11 +25,12 @@ generate.addEventListener ('click', function(){
     console.log(costo_biglietto)
 
     //CALCOLARE GLI SCONTI
-
-
+    let minorenne= document.getElementById('minorenne')
+    let over= document.getElementById('over')
     let sconto_minorenni= costo_biglietto * 0.8
     let sconto_over= costo_biglietto * 0.6
     const eta = document.getElementById('myselect').value
+    console.log(eta)
     
 
     if (eta===minorenne){
