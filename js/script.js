@@ -22,11 +22,9 @@ generate.addEventListener ('click', function(){
     //COSTO BIGLIETTO PREZZO BASE
 
     let costo_biglietto= second_value_input * 0.21
-    console.log(costo_biglietto)
+    
 
     //CALCOLARE GLI SCONTI
-    let minorenne= document.getElementById('minorenne')
-    let over= document.getElementById('over')
     let sconto_minorenni= costo_biglietto * 0.8
     let sconto_over= costo_biglietto * 0.6
     const eta = document.getElementById('myselect').value
@@ -50,26 +48,3 @@ generate.addEventListener ('click', function(){
 
     })
 
-// INSERISCI IL NUMERO DI KM DA PERCORRERE
-
-// let km= parseInt(prompt('Inserisci il numero di km da percorrere'));
-// console.log(km)
-
-// INSERISCI LA TUA ETA'
-
-// let eta= parseInt(prompt('Inserisci la tua età'));
-// console.log(eta)
-
-
-// CALCOLARE IL PREZZO DEL VIAGGIO
-
-
-
-
-// CALCOLARE GLI SCONTI
-
-
-
-// MOSTRO A SCHERMO IL PREZZO DEL BIGLIETTO *BONUS*
-
-// document.getElementById('prezzo_biglietto').innerHTML= ('Il prezzo del biglietto è di' + " " + costo_biglietto + '€')
