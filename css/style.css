@@ -12,6 +12,28 @@
     box-shadow: 1px 1px 5px black;
 }
 
-.background-green {
+.background-body {
     background-color: rgba(185,21,80,255);
+}
+
+.custom-text-color {
+    color: rgba(185,21,80,255);
+}
+
+.custom-border-color {
+    border: 1px solid rgba(185,21,80,255);
+    border-radius: 5px;
+}
+
+.custom-button {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgba(185,21,80,255);
+    text-decoration: none;
+    color: white;
+}
+
+.custom-button:hover {
+    color:white;
+    box-shadow: 1px 1px 5px black;
 }
