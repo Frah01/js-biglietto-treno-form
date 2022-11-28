@@ -29,21 +29,28 @@ generate.addEventListener ('click', function(){
     let sconto_over= costo_biglietto * 0.6
     const eta = document.getElementById('myselect').value
     console.log(eta)
+
+    //NOME PASSEGGERO INNERHTML
+
+    document.getElementById('nome_passeggero').innerHTML= (value_input)
     
 
     if (eta==='Minorenne'){
-    costo_biglietto= Math.round(sconto_minorenni * 100.0) / 100.0;
-    console.log(costo_biglietto)
+        costo_biglietto= Math.round(sconto_minorenni * 100.0) / 100.0;
+        console.log(costo_biglietto)
+        document.getElementById('prezzo_biglietto').innerHTML= ('Il prezzo del biglietto è di' + " " +costo_biglietto + '€')
     
     }
 
     else if (eta==='Over 65'){
         costo_biglietto= Math.round(sconto_over * 100.0) / 100.0;
         console.log(costo_biglietto)
+        document.getElementById('prezzo_biglietto').innerHTML= ('Il prezzo del biglietto è di' + " " +costo_biglietto + '€')
     }
 
     else {
         console.log(costo_biglietto)
+        document.getElementById('prezzo_biglietto').innerHTML= ('Il prezzo del biglietto è di' + " " +costo_biglietto + '€')
     }
 
     })

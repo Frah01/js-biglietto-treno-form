@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.background-white {
+    background-color: white;
+}
+
+.box-shadow {
+    box-shadow: 1px 1px 5px black;
+}
+
 .background-green {
-    background-color: lightgreen;
+    background-color: rgba(185,21,80,255);
 }
