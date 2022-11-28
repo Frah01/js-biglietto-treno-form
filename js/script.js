@@ -33,13 +33,13 @@ generate.addEventListener ('click', function(){
     console.log(eta)
     
 
-    if (eta===minorenne){
+    if (eta==='Minorenne'){
     costo_biglietto= Math.round(sconto_minorenni * 100.0) / 100.0;
     console.log(costo_biglietto)
     
     }
 
-    else if (eta===over){
+    else if (eta==='Over 65'){
         costo_biglietto= Math.round(sconto_over * 100.0) / 100.0;
         console.log(costo_biglietto)
     }
